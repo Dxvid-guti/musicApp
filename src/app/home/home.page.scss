@@ -1,0 +1,93 @@
+*{
+    background-color: #121212;
+}
+
+.responsive-image-container {
+    width: 100%;
+    max-height: 15rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+  
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    //margin-bottom: 0.5rem;
+    background-size: cover;
+    background-repeat: repeat;
+}
+  
+h1{
+    margin-top: 1.5rem;
+}
+  
+.custom-image {
+    width: 100%;    
+    height: auto;   
+    max-height: 100%; 
+}
+  
+.paragraphWhite{
+    font-size: 0.7rem;
+    color: #ffff;
+    margin-bottom: 0.1rem;
+    line-height: 1;
+}
+  
+.bottom-toolbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.transparent{
+    --background: transparent;
+    --border-color: transparent;
+}
+  
+.bottom-toolbar {
+    //margin-top: 0.5rem;  
+    --background: #121212;  
+    //margin-bottom: 1.5rem;  
+    border-radius: 3rem;
+}
+  
+.bottom-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+  
+ion-button {
+    --background: transparent !important;  
+    color: #fff !important;  
+    font-size: 1rem !important;  
+    box-shadow: none;
+}
+  
+ion-icon {
+    color: #fff !important;  
+    font-size: 1.5rem !important;  
+}
+  
+.paragraphGray{
+    font-size: 0.7rem;
+    color: gray;
+    line-height: 1;
+}
+  
+ion-row {
+    ion-col {
+      padding: 0.5rem; 
+    }
+}
+
+.margin-title{
+    margin-top: 0.5rem;
+}
+
+ion-footer{
+    margin-bottom: 1.5rem;
+    box-shadow: none;
+}

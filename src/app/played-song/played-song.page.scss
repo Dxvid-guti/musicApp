@@ -1,0 +1,152 @@
+ion-header {
+    --ion-background-color: transparent;
+    background: transparent;
+    box-shadow: transparent;
+    z-index: 1;
+    position: absolute;
+    box-shadow: none;
+}
+
+ion-toolbar {
+    --background: transparent;
+    
+}
+  
+.centered-icons {
+    position: fixed;
+    bottom: 16.5rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+}
+
+.backIcon{
+    justify-content: start;
+}
+  
+ion-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+ion-button {
+    margin: 0 auto;
+    ion-icon {
+        background:none;
+        color: #ffffff;
+        font-size: 24px;
+    }
+}
+  
+.music-progress {
+    position: fixed;
+    bottom: 17rem; 
+    left: 2rem; 
+    right: 2rem; 
+    height: 0.5rem; 
+    background-color: #ddd;
+    border-radius: 1rem;
+}
+  
+.progress-bar {
+    height: 100%;
+    width: 50%; 
+    background-color: #af4c4c; 
+    border-radius: 1rem;
+}
+  
+.text-container {
+    position: fixed;
+    bottom: 15.5rem; 
+    left: 2rem;
+    right: 2rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.text-container-two {
+    position: fixed;
+    bottom: 12.5rem; 
+    left: 2rem; 
+    right: 2rem;
+    display: flex;
+}
+  
+.text-left,
+.text-right {
+    font-size: 0.8rem; 
+}
+  
+.text-left-primary{
+    font-size: 1.5rem;
+}
+  
+ion-content{
+    --background: url('../../assets/anuel.jpg');
+    --background-position: center;
+    --background-repeat: no-repeat;
+    --background-size: cover;
+}
+
+ion-list {
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    --background-color: transparent; 
+    background: none;
+    border-radius: 20px; 
+}
+  
+ion-item {
+    --ion-background-color: transparent; 
+    background: none;
+}
+  
+ion-avatar {
+    margin-right: 10px; 
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%;
+    overflow: hidden; 
+}
+  
+ion-icon {
+    color: #555; 
+    font-size: 20px; 
+    margin-left: auto; 
+}
+
+.list{
+    margin-bottom: 1rem;
+}
+
+ion-content {
+    --background: transparent; 
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+        background-size: cover;
+    }
+}
+
+ion-avatar {
+    height: 2rem;
+    width: 2rem;
+    --border-radius: 0;
+    img{
+        height: 2rem;
+        width: 2rem;
+        background-size: cover;
+    }
+}
