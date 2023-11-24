@@ -7,37 +7,35 @@
     </ion-buttons>
     <ion-buttons slot="end">
       <ion-button>
-        <ion-icon name="share-social-outline"></ion-icon>
+        <ion-icon name="share-social"></ion-icon>
+      </ion-button>
+      <ion-button (click)="toggleIconHeart()">
+        <ion-icon name="{{ isIconHeartSelected ? 'heart-outline' : 'heart' }}"></ion-icon>
       </ion-button>
       <ion-button>
-        <ion-icon name="heart"></ion-icon>
-      </ion-button>
-      <ion-button>
-        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+        <ion-icon name="ellipsis-horizontal"></ion-icon>
       </ion-button>
     </ion-buttons>
-     
   </ion-toolbar>
 </ion-header>
 
 <ion-content >
-
   <ion-toolbar class="centered-icons transparent-toolbar">
     <ion-buttons>
       <ion-button>
-        <ion-icon name="shuffle-outline"></ion-icon>
+        <ion-icon name="shuffle"></ion-icon>
+      </ion-button>
+      <ion-button [class.pushedBack]="pushedBack" (click)="togglePushedBack()" [class.active]="pushedBack">
+        <ion-icon name="play-back"></ion-icon>
+      </ion-button>
+      <ion-button (click)="togglePlayPause()">
+        <ion-icon name="{{ isPlaying ? 'pause' : 'play' }}"></ion-icon>
+      </ion-button>
+      <ion-button [class.pushedNext]="pushedNext" (click)="togglePushedNext()" [class.active]="pushedNext">
+        <ion-icon name="play-forward"></ion-icon>
       </ion-button>
       <ion-button>
-        <ion-icon name="play-back-outline"></ion-icon>
-      </ion-button>
-      <ion-button>
-        <ion-icon name="play-outline"></ion-icon>
-      </ion-button>
-      <ion-button>
-        <ion-icon name="play-forward-outline"></ion-icon>
-      </ion-button>
-      <ion-button>
-        <ion-icon name="repeat-outline"></ion-icon>
+        <ion-icon name="repeat"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>

@@ -149,3 +149,55 @@ ion-avatar {
         background-size: cover;
     }
 }
+
+.pushedBack >ion-icon {
+    transition: transform 0.3s ease-in-out;
+}
+  
+.pushedBack.active >ion-icon {
+    animation: slideOutAndIn 0.6s ease-in-out;
+}
+  
+.pushedNext >ion-icon {
+    transition: transform 0.3s ease-in-out;
+}
+  
+.pushedNext.active >ion-icon {
+    animation: slideOutAndInReverse 0.6s ease-in-out;
+}
+  
+@keyframes slideOutAndIn {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    75% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+  
+@keyframes slideOutAndInReverse {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    75% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
