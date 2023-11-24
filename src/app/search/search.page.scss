@@ -40,18 +40,26 @@ ion-searchbar.custom {
 .margin-title{
     margin-top: 0.5rem;
 }
-
-ion-list {
-    padding: 10px; 
-}
   
 ion-item {
-    --ion-background-color: transparent; 
+    --ion-background-color: transparent;
 }
   
-.song-num {
-    font-size: 1.5rem; 
-    margin-right: 1rem; 
+.song-info {
+    display: flex;
+    align-items: center;
+}
+  
+.song-numero {
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+  
+ion-avatar {
+    margin-right: 1rem;
+    --border-radius: 0%;
+    width: 3rem;
+    height: fit-content;
 }
 
 .transparent{
@@ -83,6 +91,6 @@ ion-icon {
 }
 
 ion-footer{
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     box-shadow: none;
 }

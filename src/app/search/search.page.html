@@ -8,7 +8,7 @@
     <h2>Recently heard</h2>
   </ion-label>
 
-  <ion-row>
+  <ion-row style="margin-bottom: 0.3rem;">
     <ion-col size="4" size-md="4" size-lg="4" size-xl="4">
       <ion-img src="assets/monstruoAnuel.png" class="responsive-image"></ion-img>
       <ion-label>
@@ -34,14 +34,20 @@
     </ion-col>
   </ion-row>
 
+  <ion-label style="margin-bottom: 0.3rem;">
+    <h2>Recently Music</h2>
+  </ion-label>
+
   <ion-list>
-    <ion-item *ngFor="let song of songList">
+    <ion-item *ngFor="let song of songList" class="transparent">
       <ion-label>
-        <div class="song-num">{{ song.numero | number:'2.0-' }}</div>
-        <ion-avatar slot="start">
-          <img src="{{ song.imagen }}"/>
-        </ion-avatar>
-        <h2>{{ song.nombre }}</h2>
+        <div class="song-info">
+          <div class="song-numero">{{ song.numero | number:'2.0-0'}}</div>
+          <ion-avatar slot="start">
+            <img src="{{ song.imagen }}"/>
+          </ion-avatar>
+          <h2>{{ song.nombre }}</h2>
+        </div>
       </ion-label>
       <ion-icon slot="end" name="{{ song.icono }}"></ion-icon>
     </ion-item>
